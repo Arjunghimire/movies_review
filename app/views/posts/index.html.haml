@@ -1,0 +1,8 @@
+.body-content
+ %h2.main_header_second All Articles  
+ - @posts.each do |post|
+  %h3= link_to post.title, post_path(post)
+  %p 
+   Published at 
+   = post.created_at.strftime("%B %m,%Y")
+  %hr

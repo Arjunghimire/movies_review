@@ -1,0 +1,38 @@
+*
+{
+	margin:0px;
+}
+.body-content
+{
+	width: 1000px;
+	margin: auto;
+	height: auto;
+	text-align: center;
+	.main_header_second
+	{
+		font-family: arial;
+		font-size: 30px;
+		color: #FB1163;
+	}
+	.main_header_third
+	{
+		color: #1DBAE9;
+	}
+	.image_border
+	{
+		border:2px solid #000000;
+		border-radius: 5px;
+		margin-bottom: 10px;
+
+	}
+	.paragraph
+	{
+		width: 1000px;
+		text-align: left;
+	}
+}
+.new_container
+{
+	width: 500px;
+	margin: auto;
+}
