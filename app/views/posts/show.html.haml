@@ -1,8 +1,9 @@
 .body-content
  %h2.main_header_second Details !!!
- %h3.main_header_third = @post.title
+ %h3.main_header_third= @post.title
  = image_tag @post.my_file_url(:medium).to_s, class: "image_border"
  %p.paragraph= @post.body
  = link_to "Back",posts_path,class: "btn btn-default"
- = link_to "Delete Me",post_path(), method: :delete,class: "btn btn-default"
+ = link_to "Edit",edit_post_path,class: "btn btn-default"
+ = link_to "Delete Me",post_path, method: :delete,class: "btn btn-default"
 

@@ -28,6 +28,15 @@ class PostsController < ApplicationController
 		redirect_to posts_path
 	end
 
+    def edit
+    	@post=Post.friendly.find(params[:id])
+    end
+
+    def update
+    	@post=Post.friendly.find(params[:id])
+    	@post.update_attributes(post_params)
+    	redirect_to posts_path
+    end
 
 
 	private
